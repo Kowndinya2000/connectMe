@@ -291,7 +291,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         //NOTE: Requires API 17+? I think this is JellyBean
         if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR2){
             Log.d(TAG, "Trying to pair with " + deviceName);
-            mBTDevices.get(i).setPin("1234".getBytes());
             mBTDevices.get(i).createBond();
         }
     }
